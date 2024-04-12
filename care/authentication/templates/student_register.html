@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cente App - Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic styling for a clean and centered form */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-container {
+    width: 350px; /* Adjust width as needed */
+    margin: 80px auto; /* Centers the form horizontally and vertically */
+    border: 1px solid #ddd; /* Adds a thin border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding for spacing */
+    background-color: #fff; /* White background for the form */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  h2 {
+    text-align: center; /* Centers the title */
+    margin-bottom: 15px; /* Spacing after title */
+  }
+  
+  label {
+    display: block; /* Makes labels appear on separate lines */
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+    margin-bottom: 15px; 
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0067cc; }
+  
+  p {
+    text-align: center; 
+    margin-top: 15px; 
+  }
+  
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Sign Up</h2>
+    <form action="/student_register" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <label for="confirm_password">Confirm Password:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required>
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="/student_login">Login</a></p>
+    </form>
+  </div>
+
+</body>
+</html>

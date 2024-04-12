@@ -7,3 +7,7 @@ def blog(request):
     template = loader.get_template('blog.html')
     return HttpResponse(template.render())
     # return HttpResponse("hello world , this is the refactory class for 2024")
+def viewblog(request):
+    template = loader.get_template('viewblog.html')
+    return HttpResponse(template.render())
+    # return HttpResponse("hello world , this is the refactory class for 2024")
